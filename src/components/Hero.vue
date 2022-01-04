@@ -35,5 +35,7 @@
 </script>
 
 <style>
-
+.hero {
+	display: flex;
+}
 </style>

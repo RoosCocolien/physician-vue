@@ -3,7 +3,7 @@
 	<Header />
 	<Navigation />
 	<Hero />
-	<ResourceCard />
+	<ResourceCard title="Webinar" subTitle="Behind the scenes of developing Pfizer's COVID-19 vaccine" />
 	<Content />
 	<Content />
 	<topics-card />

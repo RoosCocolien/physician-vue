@@ -1,11 +1,11 @@
 <template>
 <article class="collection__card">
-	<h6 class="collection__card--label">Collection</h6>
-	<h3 class="collection__card--title">Dealing with COVID-19 and vaccines</h3>
+	<h6 class="collection__card--label">{{subTitle}}</h6>
+	<h3 class="collection__card--title">{{title}}</h3>
 	<img
 	class="collection__card--image"
-	src="https://via.placeholder.com/260x260/FFF8F2"
-	alt="Illustration of atoms"
+	:src="this.src"
+	:alt="this.alt"
 	/>
 </article>
 </template>
@@ -13,6 +13,12 @@
 <script>
 export default {
 	name: 'TopicsCard',
+	props: {
+		subTitle: {required: false, type: String},
+		title: {required: false, type: String},
+		src: {required: false, type: String},
+		alt: {required: false, type: String},
+	}
 }
 </script>
 

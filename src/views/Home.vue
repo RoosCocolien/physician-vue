@@ -7,7 +7,8 @@
 	<!-- <ResourceCard title="Webinar" subTitle="Behind the scenes of developing Pfizer's COVID-19 vaccine" src="https://via.placeholder.com/377x276" alt="Person with face mask" /> -->
 	<Content />
 	<Content />
-	<topics-card />
+	<slideshow :cards="this.Topics" />
+	<!-- <topics-card /> -->
 	<banner />
 	<info />
 	<related-pages />
@@ -20,8 +21,8 @@ import Header from '../components/Header.vue';
 import Navigation from '../components/Navigation.vue';
 import Hero from '../components/Hero.vue';
 import Carousel from '../components/Carousel.vue';
+import Slideshow from '../components/Slideshow.vue';
 import Content from '../components/Content.vue';
-import TopicsCard from '../components/TopicsCard.vue';
 import Banner from '../components/Banner.vue';
 import Info from '../components/Info.vue';
 import RelatedPages from '../components/RelatedPages.vue';
@@ -35,11 +36,11 @@ export default {
 	Hero,
 	Carousel,
 	Content,
-	TopicsCard,
 	Banner,
 	Info,
 	RelatedPages,
 	Footer,
+	Slideshow,
   },
   data() {
 	return {
@@ -66,6 +67,32 @@ export default {
 				title: "Article", subTitle: "Behind the scenes of developing Pfizer's COVID-19 vaccine", src: "https://via.placeholder.com/377x276/FFEAE8", alt: "Person with face mask7"
 			},
 		],
+		Topics: [
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+			{
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+			},
+		]
 	};
   }
 };

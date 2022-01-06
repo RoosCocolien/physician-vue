@@ -1,7 +1,7 @@
 <template>
-	<article class="carousel__article">
+	<article class="resource-card">
 		<img
-		class="carousel__article--image"
+		class="resource-card__image"
 		:src="this.src"
 		:alt="this.alt"
 		/>
@@ -22,8 +22,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.carousel__article {
-	background-color: $notice;
-}
+<style src="./ResourceCard.scss" lang="scss">
+
 </style>

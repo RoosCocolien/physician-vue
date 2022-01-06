@@ -1,0 +1,10 @@
+.resource-card {
+	& > * {
+		margin-block-end: $spacing-medium;
+	}
+	margin-inline-end: $spacing-small;
+}
+
+.resource-card__image {
+	border-radius: 20px;
+}

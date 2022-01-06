@@ -1,4 +1,4 @@
-# physician-vue
+# physician-vue-test
 
 ## Project setup
 ```

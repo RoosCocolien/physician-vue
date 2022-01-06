@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ResourceCard from '../components/ResourceCard.vue';
+import ResourceCard from '../ResourceCard/ResourceCard.vue';
 
 export default {
 	name: 'Carousel',

@@ -1,46 +1,44 @@
 <template>
   <div class="home">
-	<Header />
-	<Navigation />
-	<Hero />
-	<Carousel :cards="this.Resources" />
-	<!-- <ResourceCard title="Webinar" subTitle="Behind the scenes of developing Pfizer's COVID-19 vaccine" src="https://via.placeholder.com/377x276" alt="Person with face mask" /> -->
-	<Content />
-	<Content />
-	<slideshow :cards="this.Topics" />
-	<!-- <topics-card /> -->
-	<banner />
-	<info />
+	<navigation-menu />
+	<app-header />
+	<main-hero />
+	<page-banner />
+	<carousel-cards :cards="this.Resources"/>
+	<page-content />
+	<page-content />
+	<slideshow-cards :cards="this.Topics"/>
+	<info-footer />
 	<related-pages />
-	<Footer />
+	<app-footer />
   </div>
 </template>
 
 <script>
-import Header from '../components/Header.vue';
-import Navigation from '../components/Navigation.vue';
-import Hero from '../components/Hero.vue';
-import Carousel from '../components/Carousel.vue';
-import Slideshow from '../components/Slideshow.vue';
-import Content from '../components/Content.vue';
-import Banner from '../components/Banner.vue';
-import Info from '../components/Info.vue';
-import RelatedPages from '../components/RelatedPages.vue';
-import Footer from '../components/Footer.vue';
+import AppHeader from '../components/AppHeader/AppHeader.vue';
+import CarouselCards from '../components/CarouselCards/CarouselCards.vue';
+import PageBanner from '../components/PageBanner/PageBanner.vue';
+import PageContent from '../components/PageContent/PageContent.vue';
+import SlideshowCards from '../components/SlideshowCards/SlideshowCards.vue';
+import AppFooter from '../components/AppFooter/AppFooter.vue';
+import MainHero from '../components/MainHero/MainHero.vue';
+import InfoFooter from '../components/InfoFooter/InfoFooter.vue';
+import RelatedPages from '../components/RelatedPages/RelatedPages.vue';
+import NavigationMenu from '../components/NavigationMenu/NavigationMenu.vue';
 
 export default {
   name: 'Home',
-  components: {
-	Header,
-	Navigation,
-	Hero,
-	Carousel,
-	Content,
-	Banner,
-	Info,
+  components: { 
+	AppHeader,
+    PageBanner,
+    CarouselCards,
+    SlideshowCards,
+    PageContent,
+    AppFooter,
+    MainHero,
+    InfoFooter,
 	RelatedPages,
-	Footer,
-	Slideshow,
+    NavigationMenu,
   },
   data() {
 	return {
@@ -98,6 +96,8 @@ export default {
 };
 </script>
 
-<style>
-
+<style lang="scss">
+	.home {
+		background-color: lightcyan;
+	}
 </style>

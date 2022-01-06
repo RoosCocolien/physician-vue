@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import TopicsCard from './TopicsCard.vue';
+import TopicsCard from '../TopicsCard/TopicsCard.vue';
 
 export default {
-	name: 'Carousel',
+	name: 'SlideshowCards',
 	components: {
 		TopicsCard,
 	},
@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .carousel__list {
 	display: flex;
 	list-style-type: none;

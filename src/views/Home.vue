@@ -1,14 +1,14 @@
 <template>
-  <div class="home">
+  <div class="container md">
 	<main-hero />
 	<page-banner />
 	<carousel-cards :cards="this.Resources"/>
 	<page-content />
 	<page-content />
-	<!-- <slideshow-cards :cards="this.Topics"/> -->
+	<slideshow-cards :cards="this.Topics"/>
 	<info-footer />
 	<related-pages />
-	<app-footer />
+	<!-- <app-footer /> -->
   </div>
 </template>
 
@@ -17,10 +17,10 @@ import MainHero from '../components/MainHero/MainHero.vue';
 import PageBanner from '../components/PageBanner/PageBanner.vue';
 import CarouselCards from '../components/CarouselCards/CarouselCards.vue';
 import PageContent from '../components/PageContent/PageContent.vue';
-// import SlideshowCards from '../components/SlideshowCards/SlideshowCards.vue';
+import SlideshowCards from '../components/SlideshowCards/SlideshowCards.vue';
 import InfoFooter from '../components/InfoFooter/InfoFooter.vue';
 import RelatedPages from '../components/RelatedPages/RelatedPages.vue';
-import AppFooter from '../components/AppFooter/AppFooter.vue';
+// import AppFooter from '../components/AppFooter/AppFooter.vue';
 
 export default {
   name: 'Home',
@@ -29,10 +29,10 @@ export default {
     PageBanner,
     CarouselCards,
     PageContent,
-    // SlideshowCards,
+    SlideshowCards,
     InfoFooter,
 	RelatedPages,
-    AppFooter,
+    // AppFooter,
   },
   data() {
 	return {
@@ -82,7 +82,7 @@ export default {
 				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 7"
 			},
 			{
-				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 8"
 			},
 		]
 	};
@@ -90,8 +90,5 @@ export default {
 };
 </script>
 
-<style lang="scss">
-	.home {
-		background-color: lightcyan;
-	}
+<style src="./Home.scss" lang="scss">
 </style>

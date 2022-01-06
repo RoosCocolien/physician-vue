@@ -1,7 +1,7 @@
 <template>
-	<nav class="navigation__secondary">
-		<ul class="navigation__secondary--list">
-			<li class="navigation__secondary--item">
+	<nav class="navigation-menu">
+		<ul class="navigation-menu__list">
+			<li class="navigation-menu__item">
 				<picture>
 					<router-link to="/">
 						<img
@@ -11,19 +11,19 @@
 					</router-link>
 				</picture>
 			</li>
-			<li class="navigation__secondary--item">
+			<li class="navigation-menu__item">
 				<a class="link" href="#">Research</a>
 			</li>
-			<li class="navigation__secondary--item">
+			<li class="navigation-menu__item">
 				<a class="link" href="#">Health</a>
 			</li>
-			<li class="navigation__secondary--item">
+			<li class="navigation-menu__item">
 				<a class="link" href="#">R&#38;D</a>
 			</li>
 		</ul>
-		<div class="navigation__secondary--icon">
-			<a class="link" href="#">Icon1</a>
-			<a class="link" href="#">Icon2</a>
+		<div class="navigation-menu__icons">
+			<a class="link navigation-menu__icons--item" href="#">Icon1</a>
+			<a class="link navigation-menu__icons--item" href="#">Icon2</a>
 		</div>
 	</nav>
 </template>
@@ -34,15 +34,4 @@
 	}
 </script>
 
-<style>
-.navigation__secondary {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.navigation__secondary--list {
-	list-style-type: none;
-	display: flex;
-}
-</style>
+<style src="./NavigationMenu.scss" lang="scss"></style>

@@ -1,8 +1,8 @@
 <template>
-	<article class="hero">
-		<article class="hero__text">
-			<nav class="hero__text--nav">
-				<ul class="hero__text--nav-list">
+	<article class="main-hero">
+		<article class="main-hero__text">
+			<nav class="main-hero__text--nav">
+				<ul class="main-hero__text--nav-list">
 					<li class="hero__text--nav-item">
 						<a class="link link__brand" href="#">Health &gt;</a>
 					</li>
@@ -34,8 +34,5 @@
 	}
 </script>
 
-<style>
-.hero {
-	display: flex;
-}
+<style lang="scss" src="./MainHero.scss">
 </style>

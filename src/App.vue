@@ -1,25 +1,21 @@
 <template>
-  <div id="app">
+  <div id="app" class="md">
 	<navigation-menu />
 	<app-header />
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-    <router-view/>
+    <router-view />
+	<app-footer />
   </div>
 </template>
 
 <script>
+import AppFooter from './components/AppFooter/AppFooter.vue';
 import AppHeader from './components/AppHeader/AppHeader.vue';
 import NavigationMenu from './components/NavigationMenu/NavigationMenu.vue';
 
 export default {
-  components: { AppHeader, NavigationMenu },
+  components: { AppHeader, NavigationMenu, AppFooter },
 }
 </script>
 
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

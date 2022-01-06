@@ -16,11 +16,13 @@
 }
 
 .carousel__navigation {
-	bottom: 0;
+	// bottom: 0;
 	position: absolute;
 	display: inline-flex;
+	align-items: center;
 	justify-content: space-between;
 	inline-size: 90vw;
+	height: 40%;
 }
 
 .carousel__navigation--button {

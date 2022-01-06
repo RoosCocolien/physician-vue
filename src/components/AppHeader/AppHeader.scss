@@ -1,0 +1,13 @@
+.app-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.app-header__list {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.app-header__item {
+	margin-inline-end: $spacing-small;
+}

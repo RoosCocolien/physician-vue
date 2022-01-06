@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAC9B;;AACD,AAAA,sBAAsB,CAAC;EACtB,OAAO,EAAE,IAAI;CACb",
+    "sources": [
+        "NavigationMenu.scss"
+    ],
+    "names": [],
+    "file": "NavigationMenu.css"
+}

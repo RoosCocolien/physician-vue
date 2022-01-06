@@ -1,0 +1,117 @@
+$font-dir: '/fonts/';
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('#{$font-dir}Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('#{$font-dir}Raleway-Italic.ttf') format('truetype');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('#{$font-dir}Raleway-Bold.ttf') format('truetype');
+	font-style: bold;
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('#{$font-dir}SourceSansPro-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('#{$font-dir}SourceSansPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('#{$font-dir}SourceSansPro-Italic.ttf') format('truetype');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('#{$font-dir}SourceSansPro-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: bold;
+}
+
+$font-family-heading: 'Raleway';
+$font-family-body: 'Source Sans Pro';
+
+body,
+p,
+button {
+	font-family: $font-family-body;
+	font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-heading;
+	font-weight: bold;
+}
+
+/* font and heading sizes */
+
+h1 {
+	font-size: 36px;
+	@media screen and (min-width: 768px) {
+		font-size: 56px;
+	}
+}
+h2 {
+	font-size: 32px;
+	@include breakpoint(desktop) {
+		font-size: 48px;
+	}
+}
+h3 {
+	font-size: 28px;
+	@include breakpoint(desktop) {
+		font-size: 40px;
+	}
+}
+h4 {
+	font-size: 24px;
+	@include breakpoint(desktop) {
+		font-size: 32px;
+	}
+}
+h5 {
+	font-size: 20px;
+	@include breakpoint(desktop) {
+		font-size: 24px;
+	}
+}
+h6 {
+	font-size: 16px;
+	@include breakpoint(desktop) {
+		font-size: 20px;
+	}
+}
+
+.xs {
+	font-size: 12px;
+}
+.sm {
+	font-size: 12px;
+	@include breakpoint(desktop) {
+		font-size: 16px;
+	}
+}
+.md {
+	font-size: 16px;
+	@include breakpoint(desktop) {
+		font-size: 20px;
+	}
+}
+.lg {
+	font-size: 20px;
+	@include breakpoint(desktop) {
+		font-size: 24px;
+	}
+}

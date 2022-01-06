@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-	<navigation-menu />
-	<app-header />
 	<main-hero />
 	<page-banner />
 	<carousel-cards :cards="this.Resources"/>
@@ -15,30 +13,26 @@
 </template>
 
 <script>
-import AppHeader from '../components/AppHeader/AppHeader.vue';
-import CarouselCards from '../components/CarouselCards/CarouselCards.vue';
+import MainHero from '../components/MainHero/MainHero.vue';
 import PageBanner from '../components/PageBanner/PageBanner.vue';
+import CarouselCards from '../components/CarouselCards/CarouselCards.vue';
 import PageContent from '../components/PageContent/PageContent.vue';
 import SlideshowCards from '../components/SlideshowCards/SlideshowCards.vue';
-import AppFooter from '../components/AppFooter/AppFooter.vue';
-import MainHero from '../components/MainHero/MainHero.vue';
 import InfoFooter from '../components/InfoFooter/InfoFooter.vue';
 import RelatedPages from '../components/RelatedPages/RelatedPages.vue';
-import NavigationMenu from '../components/NavigationMenu/NavigationMenu.vue';
+import AppFooter from '../components/AppFooter/AppFooter.vue';
 
 export default {
   name: 'Home',
   components: { 
-	AppHeader,
+	MainHero,
     PageBanner,
     CarouselCards,
-    SlideshowCards,
     PageContent,
-    AppFooter,
-    MainHero,
+    SlideshowCards,
     InfoFooter,
 	RelatedPages,
-    NavigationMenu,
+    AppFooter,
   },
   data() {
 	return {

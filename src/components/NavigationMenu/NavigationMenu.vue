@@ -3,12 +3,12 @@
 		<ul class="navigation__secondary--list">
 			<li class="navigation__secondary--item">
 				<picture>
-					<a href="#">
+					<router-link to="/">
 						<img
 							src="https://via.placeholder.com/170x48?text=Elsevier"
 							alt="logo Elsevier"
 						/>
-					</a>
+					</router-link>
 				</picture>
 			</li>
 			<li class="navigation__secondary--item">

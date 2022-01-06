@@ -22,6 +22,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.carousel__article {
+	background-color: $notice;
+}
 </style>

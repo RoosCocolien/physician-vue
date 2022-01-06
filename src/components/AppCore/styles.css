@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("/fonts/Raleway-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("/fonts/Raleway-Bold.ttf") format("truetype");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("/fonts/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("/fonts/SourceSansPro-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("/fonts/SourceSansPro-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+body,
+p,
+button {
+  font-family: "Source Sans Pro";
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+/* font and heading sizes */
+h1 {
+  font-size: 36px;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 32px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+
+h6 {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  h6 {
+    font-size: 20px;
+  }
+}
+
+.xs {
+  font-size: 12px;
+}
+
+.sm {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .sm {
+    font-size: 16px;
+  }
+}
+
+.md {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .md {
+    font-size: 20px;
+  }
+}
+
+.lg {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .lg {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

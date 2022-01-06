@@ -1,7 +1,8 @@
 <template>
 <header>
 	<nav class="navigation__primary">
-		<a class="link link__white" href="#">About Elsevier</a>
+		<!-- <a class="link link__white" href="#">About Elsevier</a> -->
+		<router-link class="link link__white" to="/about"> About Elsevier</router-link>
 		<ul class="navigation__primary--list">
 			<li class="navigation__primary--item">
 				<a class="link link__white" href="#">REL 22.04</a>

@@ -1,16 +1,19 @@
 <template>
-	<article class="content">
-		<img class="content__image--start"
-			src="https://via.placeholder.com/360x325"
+	<article :class="reverse ? 'content__reverse' : 'content'">
+		<img class="content__image"
+			src="https://via.placeholder.com/580x430"
 			alt="Person with face mask"
 		/>
-		<article class="content__text--end">
+		<article class="content__text">
 			<a href="#" class="link link__brand">Reference &#38; decision support solutions &gt;</a>
 			<h3>Improve patient outcomes with clinical and drug references</h3>
 			<p>
 				Accessible evidence based content for all stages of a patient care.
 			</p>
-			<h5 class="content__text--brand"><span class="content__text--icon">CK</span>ClinicalKey</h5>
+			<div class="content__icon">
+				<h5><abbr class="content__icon--abbr">CK</abbr></h5>
+				<h5 class="content__icon--text">ClinicalKey</h5>
+			</div>
 		</article>
 	</article>
 </template>
@@ -18,12 +21,15 @@
 <script>
 export default {
 	name: 'Content',
+	props: {
+		reverse: {
+			type: Boolean,
+			default: false,
+		}
+	}
 }
 </script>
 
-<style>
-.content {
-	display: flex;
-	align-items: center;
-}
+<style src="./PageContent.scss" lang="scss">
+
 </style>

@@ -3,10 +3,10 @@
 		<article class="main-hero__text">
 			<nav class="main-hero__text--nav">
 				<ul class="main-hero__text--nav-list">
-					<li class="hero__text--nav-item">
+					<li class="main-hero__text--nav-item">
 						<a class="link link__brand" href="#">Health &gt;</a>
 					</li>
-					<li class="hero__text--nav-item">
+					<li class="main-hero__text--nav-item">
 						<a class="link link__brand" href="#">Physicians</a>
 					</li>
 				</ul>
@@ -18,10 +18,10 @@
 			</p>
 			<button class="button button__brand sm">See our solutions</button>
 		</article>
-		<figure class="hero__figure">
+		<figure class="main-hero__figure">
 			<img
 				class="hero__figure--image"
-				src="https://via.placeholder.com/360x325"
+				src="https://via.placeholder.com/580x521"
 				alt="Person with face mask"
 			/>
 		</figure>

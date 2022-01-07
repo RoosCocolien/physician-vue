@@ -1,5 +1,7 @@
 .app-header {
-	padding-inline: $spacing-small;
+	background-color: $black;
+	padding-inline: $spacing-large;
+	padding-block: $spacing-small;
 	display: flex;
 	justify-content: space-between;
 }

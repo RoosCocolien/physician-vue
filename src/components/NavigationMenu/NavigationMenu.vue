@@ -1,7 +1,7 @@
 <template>
 	<nav class="navigation-menu">
 		<ul class="navigation-menu__list">
-			<li class="navigation-menu__item link link__white">
+			<li class="navigation-menu__item link link__black">
 				<picture>
 					<router-link to="/">
 						<img
@@ -12,18 +12,18 @@
 				</picture>
 			</li>
 			<li class="navigation-menu__item">
-				<a class="link link__white" href="#">Research</a>
+				<a class="link link__black" href="#">Research</a>
 			</li>
 			<li class="navigation-menu__item">
-				<a class="link link__white" href="#">Health</a>
+				<a class="link link__black" href="#">Health</a>
 			</li>
 			<li class="navigation-menu__item">
-				<a class="link link__white" href="#">R&#38;D</a>
+				<a class="link link__black" href="#">R&#38;D</a>
 			</li>
 		</ul>
 		<div class="navigation-menu__icons">
-			<a class="link link__white navigation-menu__icons--item" href="#">Icon1</a>
-			<a class="link link__white navigation-menu__icons--item" href="#">Icon2</a>
+			<a class="link link__black navigation-menu__icons--item" href="#">Icon1</a>
+			<a class="link link__black navigation-menu__icons--item" href="#">Icon2</a>
 		</div>
 	</nav>
 </template>

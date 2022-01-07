@@ -16,7 +16,6 @@
 }
 
 .carousel__navigation {
-	// bottom: 0;
 	position: absolute;
 	display: inline-flex;
 	align-items: center;
@@ -26,9 +25,20 @@
 }
 
 .carousel__navigation--button {
-	padding-inline: $spacing-medium;
-	padding-block: $spacing-small;
+	padding-inline: $spacing-large;
+	padding-block: $spacing-medium;
+	margin-inline: $spacing-large;
+	background-color: $white;
+	border: 3px solid $white;
+	// outline: 2px solid $white;
 	border-radius: 100%;
 	font-weight: bold;
 	font-family: 'Raleway';
+	&:hover {
+		color: $brandSecondary;
+	}
+	&:focus {
+		border: 3px solid $black;
+		outline: 3px solid $white;
+	}
 }

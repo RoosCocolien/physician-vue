@@ -6,8 +6,8 @@
 			</div>
 		</div>
 		<div class="carousel__navigation">
-			<button @click="prev" class="carousel__navigation--button md">&lt;</button>
-			<button @click="next" class="carousel__navigation--button md">&gt;</button>
+			<button @click="prev" class="carousel__navigation--button lg">&lt;</button>
+			<button @click="next" class="carousel__navigation--button lg">&gt;</button>
 		</div>
 	</div>
 </template>

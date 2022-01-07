@@ -1,7 +1,37 @@
 .main-hero {
-	display: flex;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		left: 50vw;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		content: '\A';
+		background: linear-gradient(0deg, $brandPrimary, $notice);
+	}
+}
+
+.main-hero__text {
+	& > * {
+		margin-block-end: $spacing-medium;
+	}
+	align-self: center;
 }
 
 .main-hero__text--nav-list {
 	display: flex;
+}
+
+.main-hero__text--nav-item {
+	margin-inline-end: $spacing-tiny;
+}
+
+.main-hero__text,
+.main-hero__figure {
+	margin-block: $spacing-big;
 }

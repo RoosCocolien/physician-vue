@@ -1,14 +1,13 @@
 <template>
   <div class="container md">
 	<main-hero />
-	<page-banner />
 	<carousel-cards :cards="this.Resources"/>
 	<page-content />
 	<page-content />
 	<slideshow-cards :cards="this.Topics"/>
+	<page-banner />
 	<info-footer />
 	<related-pages />
-	<!-- <app-footer /> -->
   </div>
 </template>
 

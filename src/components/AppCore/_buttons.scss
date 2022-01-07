@@ -1,0 +1,30 @@
+.button {
+	padding-inline: 16px;
+	padding-block: 12px;
+	border-radius: 8px;
+	border: 2px solid $brandSecondary;
+}
+
+.button__brand {
+	background-color: $brandSecondary;
+	color: $white;
+	&:enabled:hover {
+		background-color: $white;
+		color: $brandSecondary;
+		border-color: $white;
+		outline: 1px solid $brandSecondary;
+	}
+	&:enabled:focus {
+		outline: 2px solid $brandSecondary;
+		border: 2px solid $white;
+	}
+	&:disabled {
+		background-color: $grey-200;
+		color: $grey-800;
+		border-color: $grey-200;
+	}
+}
+
+.button__form {
+	border-radius: 0px 8px 8px 0px;
+}

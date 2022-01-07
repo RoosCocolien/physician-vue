@@ -1,10 +1,14 @@
 .navigation-menu {
+	padding-inline: $spacing-small;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	background-color: $black;
 }
 
 .navigation-menu__list {
 	display: flex;
+	align-items: center;
 }
 
 .navigation-menu__item {

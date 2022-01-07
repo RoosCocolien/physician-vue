@@ -1,4 +1,5 @@
 .app-header {
+	padding-inline: $spacing-small;
 	display: flex;
 	justify-content: space-between;
 }
@@ -6,8 +7,7 @@
 .app-header__list {
 	display: flex;
 	justify-content: flex-end;
-}
-
-.app-header__item {
-	margin-inline-end: $spacing-small;
+	& > * {
+		margin-inline-start: $spacing-small;
+	}
 }

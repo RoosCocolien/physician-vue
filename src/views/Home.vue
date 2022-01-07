@@ -28,7 +28,6 @@ export default {
     PageContent,
     InfoFooter,
 	RelatedPages,
-    // AppFooter,
   },
   data() {
 	return {

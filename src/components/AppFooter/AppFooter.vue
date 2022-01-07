@@ -1,7 +1,7 @@
 <template>
-<footer class="footer">
+<footer class="app-footer">
 	<a href="#">
-		<img src="https://via.placeholder.com/90x20?text=Elsevier" alt="logo Elsevier"/>
+		<img src="https://via.placeholder.com/90x20?text=Elsevier?" alt="logo Elsevier"/>
 	</a>
 	<a href="#">
 		<img src="https://via.placeholder.com/63x22" alt="logo RELX"/>
@@ -15,6 +15,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style src="./AppFooter.scss" lang="scss"></style>

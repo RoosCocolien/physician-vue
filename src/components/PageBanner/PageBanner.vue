@@ -1,10 +1,10 @@
 <template>
-<section role="banner" class="banner">
-	<section class="banner__text">
+<section role="banner" class="page-banner">
+	<section class="page-banner__text">
 		<h4>Discover over 50,000 books, e-books and medical journals</h4>
 		<button class="button button__brand sm">Discover books & journals</button>
 	</section>
-	<figure class="banner__figure">
+	<figure class="page-banner__figure">
 		<img src="https://via.placeholder.com/490x310" alt="Book cover" />
 	</figure>
 </section>
@@ -16,6 +16,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style src="./PageBanner.scss" lang="scss"></style>

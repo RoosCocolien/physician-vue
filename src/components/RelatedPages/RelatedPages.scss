@@ -1,0 +1,23 @@
+.related-pages {
+	& > * {
+		margin-block-end: 32px;
+	}
+}
+.related-pages__pagelinks--list {
+	list-style-type: none;
+	columns: 4;
+	margin-block-end: 0;
+	padding: 0;
+	& > * {
+		margin-block-end: 32px;
+	}
+}
+.related-pages__pagelinks--item {
+	padding-block-end: 16px;
+}
+.related-pages__logos {
+	padding-inline: 24px;
+	margin-block-start: 64px;
+	display: flex;
+	justify-content: space-between;
+}

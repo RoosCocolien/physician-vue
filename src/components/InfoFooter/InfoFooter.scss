@@ -1,0 +1,17 @@
+.info-footer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	.info-footer__action > p {
+		padding-block-end: 16px;
+	}
+}
+
+.input {
+	padding-inline: 16px;
+	padding-block: 12px;
+	border-radius: 8px 0px 0px 8px;
+	border: 2px solid $grey-200;
+	outline: 2px solid $grey-200;
+	background-color: $grey-200;
+	inline-size: 350px;
+}

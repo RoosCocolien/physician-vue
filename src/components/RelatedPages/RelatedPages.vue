@@ -1,10 +1,10 @@
 <template>
-<section class="relatedPages">
-	<section class="footer__header">
+<section class="related-pages">
+	<section class="related-pages__header">
 		<h4>Related pages</h4>
 	</section>
-	<section class="footer__pagelinks">
-		<ul class="footer__pagelinks--list">
+	<section class="related-pages__pagelinks">
+		<ul class="related-pages__pagelinks--list">
 			<li class="footer__pagelinks--item"><a class="link link__brand" href="#">Product Support &gt;</a></li>
 			<li class="footer__pagelinks--item"><a class="link link__brand" href="#">Health Hub &gt;</a></li>
 			<li class="footer__pagelinks--item"><a class="link link__brand" href="#">For Medical Faculty &gt;</a></li>
@@ -24,6 +24,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style src="./RelatedPages.scss" lang="scss"></style>

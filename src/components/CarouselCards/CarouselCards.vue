@@ -1,8 +1,12 @@
 <template>
 	<div class="carousel" aria-roledescription="carousel">
 		<div class="carousel__container" ref="container" :style="containerStyles">
-			<div clas="carousel__card" v-for="card in this.cards" :key="card.alt">
+
+			<div v-show="resources" class="carousel__card" v-for="card in this.cards" :key="card.alt">
 				<resource-card :title="card.title" :subTitle="card.subTitle" :src="card.src" :alt="card.alt" />
+			</div>
+			<div v-show="topics" v-for="card in this.cards" class="carousel__item"  :key="card.alt">
+				<topics-card :title="card.title" :subTitle="card.subTitle" :src="card.src" :alt="card.alt" />
 			</div>
 		</div>
 		<div class="carousel__navigation">
@@ -14,11 +18,12 @@
 
 <script>
 import ResourceCard from '../ResourceCard/ResourceCard.vue';
+import TopicsCard from '../TopicsCard/TopicsCard.vue';
 
 export default {
 	name: 'Carousel',
 	components: {
-		ResourceCard,
+		ResourceCard, TopicsCard,
 	},
 	data() {
 		return {
@@ -36,6 +41,14 @@ export default {
 			type: Array,
 			default: () => ({}),
 		},
+		resources: {
+			type: Boolean,
+			default: false,
+		},
+		topics: {
+			type: Boolean,
+			default: false,
+		}
 	},
 	methods: {
 		setStep() {

@@ -1,10 +1,10 @@
 <template>
   <div class="container md">
 	<main-hero />
-	<carousel-cards :cards="this.Resources"/>
+	<carousel-cards resources :cards="this.Resources"/>
 	<page-content />
 	<page-content reverse />
-	<slideshow-cards :cards="this.Topics"/>
+	<carousel-cards topics :cards="this.Topics"/>
 	<page-banner />
 	<info-footer />
 	<related-pages />
@@ -16,7 +16,6 @@ import MainHero from '../components/MainHero/MainHero.vue';
 import PageBanner from '../components/PageBanner/PageBanner.vue';
 import CarouselCards from '../components/CarouselCards/CarouselCards.vue';
 import PageContent from '../components/PageContent/PageContent.vue';
-import SlideshowCards from '../components/SlideshowCards/SlideshowCards.vue';
 import InfoFooter from '../components/InfoFooter/InfoFooter.vue';
 import RelatedPages from '../components/RelatedPages/RelatedPages.vue';
 
@@ -27,7 +26,6 @@ export default {
     PageBanner,
     CarouselCards,
     PageContent,
-    SlideshowCards,
     InfoFooter,
 	RelatedPages,
     // AppFooter,
@@ -59,28 +57,28 @@ export default {
 		],
 		Topics: [
 			{
-				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 1"
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2?text=1", alt: "Illustration of atoms 1"
 			},
 			{
-				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of analytics 1"
+				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2?text=2", alt: "Illustration of analytics 1"
 			},
 			{
-				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 3"
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2?text=3", alt: "Illustration of atoms 3"
 			},
 			{
-				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of analytics 2"
+				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2?text=4", alt: "Illustration of analytics 2"
 			},
 			{
-				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 5"
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2?text=5", alt: "Illustration of atoms 5"
 			},
 			{
-				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of analytics 3"
+				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2?text=6", alt: "Illustration of analytics 3"
 			},
 			{
-				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of atoms 7"
+				subTitle: "collection", title: "Dealing with COVID-19 and vaccines", src: "https://via.placeholder.com/260x260/FFF8F2?text=7", alt: "Illustration of atoms 7"
 			},
 			{
-				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2", alt: "Illustration of analytics 4"
+				subTitle: "collection", title: "Analytics for better healthcare", src: "https://via.placeholder.com/260x260/FFF8F2?text=8", alt: "Illustration of analytics 4"
 			},
 		]
 	};

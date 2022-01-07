@@ -3,7 +3,7 @@
 	grid-template-columns: 50% 50%;
 	align-items: center;
 	& article {
-		margin-inline: $spacing-huge;
+		margin-inline: 100px;
 	}
 }
 
@@ -15,7 +15,7 @@
 		grid-row: 1;
 	}
 	& article {
-		margin-inline-end: $spacing-huge;
+		margin-inline-end: 200px;
 	}
 }
 

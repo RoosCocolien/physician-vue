@@ -1,0 +1,10 @@
+.topics-card {
+	& > * {
+		margin-block-end: $spacing-medium;
+	}
+	margin-inline-end: $spacing-small;
+	background-color: $backgroundGreen;
+	padding-block: $spacing-medium;
+	padding-inline: $spacing-large;
+	border-radius: 20px;
+}

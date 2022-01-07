@@ -1,9 +1,9 @@
 <template>
-<article class="collection__card">
-	<h6 class="collection__card--label">{{subTitle}}</h6>
-	<h3 class="collection__card--title">{{title}}</h3>
+<article class="topics-card">
+	<h6 class="topics-card__subtitle">{{subTitle}}</h6>
+	<h3 class="topics-card__title">{{title}}</h3>
 	<img
-	class="collection__card--image"
+	class="topics-card__image"
 	:src="this.src"
 	:alt="this.alt"
 	/>
@@ -22,4 +22,4 @@ export default {
 }
 </script>
 
-<style src="./TopicsCard" lang="scss"></style>
+<style src="./TopicsCard.scss" lang="scss"></style>

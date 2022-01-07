@@ -1,4 +1,4 @@
-.content {
+.page-content {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	align-items: center;
@@ -7,11 +7,11 @@
 	}
 }
 
-.content__reverse {
+.page-content__reverse {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	align-items: center;
-	.content__text {
+	.page-content__text {
 		grid-row: 1;
 	}
 	& article {
@@ -19,21 +19,21 @@
 	}
 }
 
-.content__image {
+.page-content__image {
 	width: 100%;
 }
 
-.content__text {
+.page-content__text {
 	& > * {
 		margin-block-end: $spacing-medium;
 	}
 }
 
-.content__icon {
+.page-content__icon {
 	display: flex;
 }
 
-.content__icon--abbr {
+.page-content__icon--abbr {
 	height: 36px;
 	background-color: $brandPrimary;
 	color: $white;
@@ -44,7 +44,7 @@
 	margin-inline-end: 4px;
 }
 
-.content__icon--text {
+.page-content__icon--text {
 	position: relative;
 	top: -4px;
 }

@@ -22,6 +22,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style src="./TopicsCard" lang="scss"></style>

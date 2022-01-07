@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACX,cAAc,EAAE,IAAI;EACpB,kBAAkB,EAAE,IAAI;EACxB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CAC9B",
+    "sources": [
+        "AppFooter.scss"
+    ],
+    "names": [],
+    "file": "AppFooter.css"
+}

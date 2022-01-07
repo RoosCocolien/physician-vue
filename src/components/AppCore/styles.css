@@ -158,4 +158,78 @@ h6 {
     font-size: 24px;
   }
 }
+
+.link:link {
+  text-decoration: none;
+  padding-block: 4px;
+}
+
+.link:link:hover {
+  text-decoration: underline;
+}
+
+.link:link:disabled {
+  color: #999999;
+}
+
+.link__brand {
+  color: #004fc9;
+}
+
+.link__brand:focus {
+  outline: 2px solid #004fc9;
+  border-radius: 1px;
+}
+
+.link__white {
+  color: #fff;
+}
+
+.link__white:focus {
+  outline: 2px solid #fff;
+  border-radius: 1px;
+}
+
+.link__black {
+  color: #000;
+}
+
+.link__black:focus {
+  outline: 2px solid #000;
+  border-radius: 1px;
+}
+
+.button {
+  padding-inline: 16px;
+  padding-block: 12px;
+  border-radius: 8px;
+  border: 2px solid #004fc9;
+}
+
+.button__brand {
+  background-color: #004fc9;
+  color: #fff;
+}
+
+.button__brand:enabled:hover {
+  background-color: #fff;
+  color: #004fc9;
+  border-color: #fff;
+  outline: 1px solid #004fc9;
+}
+
+.button__brand:enabled:focus {
+  outline: 2px solid #004fc9;
+  border: 2px solid #fff;
+}
+
+.button__brand:disabled {
+  background-color: #e6e6e6;
+  color: #4d4d4d;
+  border-color: #e6e6e6;
+}
+
+.button__form {
+  border-radius: 0px 8px 8px 0px;
+}
 /*# sourceMappingURL=styles.css.map */

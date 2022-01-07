@@ -1,13 +1,14 @@
 <template>
 	<div class="carousel" aria-roledescription="carousel">
 		<div class="carousel__container" ref="container" :style="containerStyles">
-
-			<div v-show="resources" class="carousel__card" v-for="card in this.cards" :key="card.alt">
-				<resource-card :title="card.title" :subTitle="card.subTitle" :src="card.src" :alt="card.alt" />
-			</div>
-			<div v-show="topics" v-for="card in this.cards" class="carousel__item"  :key="card.alt">
-				<topics-card :title="card.title" :subTitle="card.subTitle" :src="card.src" :alt="card.alt" />
-			</div>
+			<template v-for="card in this.cards">
+				<div v-if="resources" class="carousel__card" :key="card.alt">
+					<resource-card :title="card.title" :subTitle="card.subTitle" :src="card.src" :alt="card.alt" />
+				</div>
+				<div v-if="topics" class="carousel__item"  :key="card.alt">
+					<topics-card :title="card.title" :subTitle="card.subTitle" :src="card.src" :alt="card.alt" />
+				</div>
+			</template>
 		</div>
 		<div class="carousel__navigation">
 			<button @click="prev" class="carousel__navigation--button lg">&lt;</button>
